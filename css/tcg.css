@@ -1,0 +1,202 @@
+/* Custom Styles for TC Gemmrigheim */
+
+/* Logo and decorative blocks */
+.logo {
+    background-image: url("../img/logo_web.png");
+    width: 180px;
+    height: 65px;
+    margin: 15px 0px 20px 5px;
+}
+.rotate-block-left-top {
+    display: block;
+    background-color: #fafafa;
+    position: absolute;
+    left:-10000px;
+    top: -1000px;
+    right: 35%;
+    height: 1200px;
+    z-index: -1000;
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+.rotate-block-right-top {
+    display: block;
+    background-color: #fafafa;
+    position: absolute;
+    right: -10000px;
+    top: -1000px;
+    left: 55%;
+    height: 840px;
+    z-index: -1000;
+    -webkit-transform: rotate(354deg);
+    -moz-transform: rotate(354deg);
+    -o-transform: rotate(354deg);
+    -ms-transform: rotate(354deg);
+    transform: rotate(354deg);
+}
+
+/* Navigation Bar in the header element */
+.navbar {
+    margin-bottom: 5px;
+}
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fafafa;
+}
+.navbar-item {
+    float: right;
+    cursor: pointer;   
+}
+.navbar-item a {
+    display: block;
+    color: #222;
+    text-align: center;
+    padding: 30px 16px;
+    text-decoration: none;
+    border-bottom: 3px solid #fafafa;
+}
+.navbar-item a:hover {
+    background-color:#dcffe8;
+    border-bottom: 3px solid rgb(16, 192, 0);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.nav-loaded {
+    border-bottom: 3px solid rgb(16, 192, 0);
+}
+.selected a {
+    border-bottom: 3px solid rgb(16, 192, 0);
+}
+/* Slide for the carousel */
+.slide {
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    border-radius:4px 4px 4px 4px;
+}
+.slick-arrow {
+    visibility: hidden;
+}
+.no1 { background-image: url("../img/slider/slide1.jpg"); }
+.no2 { background-image: url("../img/slider/slide2.jpg"); }
+.no3 { background-image: url("../img/slider/slide3.jpg"); }
+/* Page properties */
+#page-frame {
+    margin-top:30px;
+}
+/* Calendar properties */
+.fc-widget-header table {
+    margin-bottom:0px;
+}
+.fc-month-view table {
+    margin-bottom:0px;
+}
+.tooltip {
+    max-width:300px;
+    background:#fff;
+    position:absolute;
+    z-index:10001;
+    padding: 8px;
+    border:1px solid #eee;
+}
+/* The google map */
+.mapouter {
+    text-align:right;
+    height:400px;
+    width:99.5%;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:400px;
+    width:100%; 
+}
+/* Actual Content */
+.subliner {
+    font-size: x-small;
+    color: #888888;
+    font-style: italic;
+}
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.newsline {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+.news-image {
+    margin-top:10px;
+}
+/* Team Content */
+.team-journal {
+    padding-bottom: none;
+    margin-bottom: 30px;
+}
+.journal-heading {
+    font-weight: 200;
+    font-style: italic;
+    cursor: pointer;
+    margin: 0px 0px 15px 0px;
+    padding: 0px;
+    font-weight: bolder;
+    line-height: 0;
+}
+.journal-body {
+    display: none;
+    width: 60%;
+    margin-bottom: 20px;
+    font-style: italic;
+    
+}
+.journal-body p {
+    margin: 0% 3%;
+}
+/* Footer */
+.push {
+    min-height: 100%;
+    margin-bottom: -200px;
+}
+.footer-block {
+    display: block;
+    position: relative;
+    bottom: 0px;
+    height: 250px;
+    width: 100%;
+    background-color: #fafafa;
+    border-top: 5px solid #ddd;
+    margin-top: 100px;
+    border-radius: 10px 10px 0px 0px;
+}
+.footer-content {
+    text-align: left;
+    padding-left: 50px;
+    color: #999;
+}
+.footer-right {
+    background-image: url("../img/logo_trans.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.footer-heading {
+    color:#666;
+    text-shadow: 0px 0px 1px #ccc;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+.spacer {
+    display: block;
+    width:10px;
+    height: 10px;
+}
