@@ -37,7 +37,12 @@
     -ms-transform: rotate(354deg);
     transform: rotate(354deg);
 }
-
+.notification {
+    margin:0;
+    background-color:rgba(16, 192, 0, 0.7);
+    color: #fff;
+    text-align: center;
+}
 /* Navigation Bar in the header element */
 .navbar {
     margin-bottom: 5px;
