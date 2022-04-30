@@ -1,5 +1,21 @@
 /* Custom Styles for TC Gemmrigheim */
-
+:root {
+    --screen-sm: 576px;
+    --screem-md: 768px;
+    --screen-lg: 992px;
+    --screen-xl: 1200px;
+    --screen-2xl: 1400px;
+}
+a {
+    color: #2AECB6;
+    text-decoration: none;
+}
+a:hover {
+    color: #ECEA2A;
+}
+.column, .columns {
+    margin:0px !important;
+}
 /* Logo and decorative blocks */
 .logo {
     background-image: url("../img/logo_web.png");
@@ -46,6 +62,7 @@
 /* Navigation Bar in the header element */
 .navbar {
     margin-bottom: 5px;
+    float: right;
 }
 .navbar-list {
     list-style-type: none;
@@ -55,7 +72,7 @@
     background-color: #fafafa;
 }
 .navbar-item {
-    float: right;
+    float: left;
     cursor: pointer;   
 }
 .navbar-item a {
@@ -135,11 +152,25 @@
 }
 .newsline {
     border-bottom: 1px solid #eee;
-    padding-bottom: 40px;
-    margin-bottom: 40px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    justify-items: flex-start;
+}
+.newsline.right {
+    flex-direction: row-reverse;
+}
+.newsline.left {
+    flex-direction: row;
 }
 .news-image {
-    margin-top:10px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.news-text {
 }
 /* Team Content */
 .team-journal {
@@ -166,19 +197,15 @@
     margin: 0% 3%;
 }
 /* Footer */
-.push {
-    min-height: 100%;
-    margin-bottom: -200px;
-}
 .footer-block {
     display: block;
     position: relative;
     bottom: 0px;
-    height: 250px;
+    height: auto;
     width: 100%;
     background-color: #fafafa;
     border-top: 5px solid #ddd;
-    margin-top: 100px;
+    margin-top: 30px;
     border-radius: 10px 10px 0px 0px;
 }
 .footer-content {
@@ -187,6 +214,9 @@
     color: #999;
 }
 .footer-right {
+    position: absolute;
+    right: 0px;
+    top: 0px;
     background-image: url("../img/logo_trans.png");
     background-size: 100%;
     background-position: center;
@@ -205,3 +235,44 @@
     width:10px;
     height: 10px;
 }
+
+
+/* Responsive Tags */
+@media only screen and (min-width: 0px) and (max-width: 550px) {
+    .container {
+        width: 95% !important;
+        padding: 0 !important;
+    }
+    .slick-slider {
+        display: none !important;
+    }
+    .navbar {
+        width: 100%;
+    }
+    .navbar-list {
+        width: 100%;
+        order: reverse;
+    }
+    .navbar-item {
+        float: left;
+        width: 100%;
+    }
+    .navbar-item a:hover, .navbar-item a {
+        border: none;
+    }
+    .rotate-block-left-top, .rotate-block-right-top {
+        display: none;
+    }
+    .selected a {
+        border: none;
+        background-color:#dcffe8;
+    }
+    h5 {
+        font-size: x-large;
+    }
+    .newsline.right, .newsline.left {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 992px) { }
+@media only screen and (max-width: 1200px) { }
