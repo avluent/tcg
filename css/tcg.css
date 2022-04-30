@@ -134,6 +134,7 @@ a:hover {
     text-align:right;
     height:400px;
     width:99.5%;
+    margin-bottom: 40px;
 }
 .gmap_canvas {
     overflow:hidden;
