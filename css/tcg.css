@@ -65,6 +65,8 @@ a:hover {
     float: right;
 }
 .navbar-list {
+    display: flex;
+    min-width: min-content;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -72,7 +74,8 @@ a:hover {
     background-color: #fafafa;
 }
 .navbar-item {
-    float: left;
+    display: inline-block;
+    white-space: nowrap;
     cursor: pointer;   
 }
 .navbar-item a {
@@ -110,6 +113,20 @@ a:hover {
 .no1 { background-image: url("../img/slider/slide1.jpg"); }
 .no2 { background-image: url("../img/slider/slide2.jpg"); }
 .no3 { background-image: url("../img/slider/slide3.jpg"); }
+.to-shop-button-container {
+    position: absolute;
+    top: 360px;
+    right: -10px;
+    max-width: min-content;
+}
+.to-shop-button-container span {
+    display: none;
+}
+.to-shop-button {
+    max-width: 150px;
+    transform: rotate(10deg);
+    cursor: pointer;
+}
 /* Page properties */
 #page-frame {
     margin-top:30px;
@@ -251,6 +268,7 @@ a:hover {
         width: 100%;
     }
     .navbar-list {
+        display: block;
         width: 100%;
         order: reverse;
     }
@@ -260,6 +278,36 @@ a:hover {
     }
     .navbar-item a:hover, .navbar-item a {
         border: none;
+    }
+    .to-shop-button-container {
+        height: auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        top: 0; 
+        right: 0;
+        width: 100%;
+        max-width: max-content;
+        min-width: 100%;
+        cursor: pointer;   
+    }
+    .to-shop-button-container a {
+        display: block;
+        flex-grow: 1;
+        width: 100%;
+        height: auto;
+        background-color: #ffffdc;
+        color: #222;
+        text-align: center !important;
+        padding: 20px 16px;
+        text-decoration: none;
+        border: none;
+    }
+    .to-shop-button-container span {
+        display: block;
+    }
+    .to-shop-button {
+        display: none;
     }
     .rotate-block-left-top, .rotate-block-right-top {
         display: none;
